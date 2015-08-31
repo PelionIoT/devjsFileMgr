@@ -12,7 +12,7 @@ jsDAV.debugMode = true;
 var jsDAV_Locks_Backend_FS = require("../dev-libs/jsdav/lib/DAV/plugins/locks/fs");
 
 jsDAV.createServer({
-    node: __dirname + "",
-    locksBackend: jsDAV_Locks_Backend_FS.new(__dirname + "/../test/assets")
+    node: __dirname + "/assets",
+    locksBackend: jsDAV_Locks_Backend_FS.new(__dirname + "/assets")
 }, 8000);
 
