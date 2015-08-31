@@ -13,4 +13,6 @@ SELF="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
 pushd $SELF > /dev/null
 echo "Updating jsDav"
 git pull -s subtree jsdav master
+echo "Updating js-webdav-client"
+git pull -s subtree js-webdav-client master
 popd > /dev/null
